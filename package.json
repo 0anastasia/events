@@ -1,0 +1,38 @@
+{
+  "name": "2dom",
+  "version": "1.0.0",
+  "description": "![CI](https://github.com/0anastasia/continuousDeployment/actions/workflows/web.yml/badge.svg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0anastasia/2DOM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0anastasia/2DOM/issues"
+  },
+  "homepage": "https://github.com/0anastasia/2DOM#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.45.0",
+    "html-loader": "^4.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "core-js": "^3.31.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6"
+  }
+}
