@@ -1,0 +1,21 @@
+.board-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+  }
+  
+  .cell {
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    background-color: gray;
+    border-radius: 50px;
+  }
