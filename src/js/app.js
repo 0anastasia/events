@@ -4,12 +4,6 @@ export default class Board {
     }
   
 start() {
-    const boardBox = document.getElementsByClassName('board-box');
-    for (let i = 0; i < this.size ** 2; i += 1) {
-    //   const cell = document.createElement('div');
-    //   cell.classList = 'cell';
-    //   boardBox.appendChild(cell);
-    }
     const cellList = document.getElementsByClassName('cell');
     
     let index;

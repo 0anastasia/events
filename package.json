@@ -4,7 +4,10 @@
   "description": "![CI](https://github.com/0anastasia/continuousDeployment/actions/workflows/web.yml/badge.svg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
