@@ -36,6 +36,7 @@
     "css-minimizer-webpack-plugin": "^5.0.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "html-webpack-plugin": "^5.5.3",
-    "mini-css-extract-plugin": "^2.7.6"
+    "mini-css-extract-plugin": "^2.7.6",
+    "webpack-merge": "^5.9.0"
   }
 }
