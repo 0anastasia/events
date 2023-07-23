@@ -4,27 +4,26 @@ export default class Board {
     }
   
 start() {
+  function getRandomInt(min, max) {
+    const minCeil = Math.ceil(min);
+    const maxFloor = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloor - minCeil)) + minCeil;
+  }
+
     const cellList = document.getElementsByClassName('cell');
-    
-    let index;
-    let lastIndex = 0;
-    
-    const min = 0;
-    const max = this.size ** 2 - 1;
+    let currentCell;
     
     setInterval(() => {
-      index = Math.floor(min + Math.random() * (max + 1 - min));
-      if (index === lastIndex) {
-        index += 1;
-        if (index >= max) {
-          index = 0;
-        }
+      if (currentCell !== undefined) {
+        currentCell.classList.remove('cell__active');
       }
-      
-      cellList[index].innerHTML = '<img src="goblin.png">';
-      cellList[lastIndex].innerHTML = '';
-      lastIndex = index;
-    }, 800);
+      let cell = cellList[getRandomInt(0, cellList.length)];
+      while (cell === currentCell) {
+        cell = cellList[getRandomInt(0, cellList.length)];
+      }
+      currentCell = cell;
+      cell.classList.add('cell__active');
+    }, 1000);
   }
 }
 
