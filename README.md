@@ -1,4 +1,4 @@
-#DOM
+#events
 
 [![Build status](https://ci.appveyor.com/api/projects/status/4fxf7hf7cnnduvr3?svg=true)](https://ci.appveyor.com/project/0anastasia/events)
 
