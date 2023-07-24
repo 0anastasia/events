@@ -1,20 +1,12 @@
+import Board from './board';
+import Goblin from './goblin';
+
 const cells = document.getElementsByClassName('cell');
-let currentCell;
+const eScores = document.getElementById('scores');
+const eMisses = document.getElementById('misses');
+const pop = document.getElementsByClassName('game_end')[0];
+const button = document.getElementsByClassName('button')[0];
 
-function getRandomInt(min, max) {
-  const minCeil = Math.ceil(min);
-  const maxFloor = Math.floor(max);
-  return Math.floor(Math.random() * (maxFloor - minCeil)) + minCeil;
-}
-
-setInterval(() => {
-  if (currentCell !== undefined) {
-    currentCell.classList.remove('cell__active');
-  }
-  let cell = cells[getRandomInt(0, cells.length)];
-  while (cell === currentCell) {
-    cell = cells[getRandomInt(0, cells.length)];
-  }
-  currentCell = cell;
-  cell.classList.add('cell__active');
-}, 1000);
+const goblin = new Goblin();
+const board = new Board(goblin, eScores, eMisses, pop);
+board.init(cells, button);

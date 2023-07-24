@@ -7,6 +7,24 @@
   <title>Document</title>
 </head>
 <body>
+
+  <div class="header">
+    <div class="scores">
+        <span class="heading">
+              баллы:
+        </span>
+
+        <span class="scores" id = "scores"></span>
+    </div>
+    
+    <div class="misses">
+       <span class="heading">
+            промахи:
+        </span>
+        <span class="scores" id = "misses"></span>
+    </div>
+  </div>
+
   <div class="board-box">
     <div class="board" id="board">
         <div class="cell"></div>
@@ -27,5 +45,13 @@
         <div class="cell"></div>
     </div>
 </div>
+
+<div class="game_end game_end_display">
+  <span class="game_end_span">
+        конец игры.
+  </span>
+  <button type="button" class="button"> начать заново </button>
+</div>
+
 </body>
 </html>
