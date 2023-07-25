@@ -1,6 +1,6 @@
 #events
 
-[![Build status](https://ci.appveyor.com/api/projects/status/4fxf7hf7cnnduvr3?svg=true)](https://ci.appveyor.com/project/0anastasia/events)
+[![Build status](https://ci.appveyor.com/api/projects/status/ax1wggyqeu7dqujl?svg=true)](https://ci.appveyor.com/project/0anastasia/events)
 
 #### Описание
 Важно: в рамках этого ДЗ нужно использовать менеджер пакетов yarn
